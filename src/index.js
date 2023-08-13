@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ProfileCardV1 } from "./ProfileCardV1";
 import "./index.css";
 
 const pizzaData = [
@@ -49,10 +50,13 @@ const pizzaData = [
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Menu />
-      <Footer />
+    <div>
+      <div className="container">
+        <Header />
+        <Menu />
+        <Footer />
+      </div>
+      <ProfileCardV1 />
     </div>
   );
 }
