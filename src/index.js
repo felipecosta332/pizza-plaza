@@ -110,7 +110,10 @@ function Menu() {
   );
 }
 
-function Pizza({ name, ingredients, photoName, price }) {
+function Pizza({ name, ingredients, photoName, price, soldOut }) {
+
+  if (soldOut) return null;
+
   return (
     <li className="pizza">
       <img src={photoName} alt="Pizza spinaci" />
@@ -135,6 +138,8 @@ function Footer() {
   // } else {
   //   alert()
   // }
+
+  // if (!isOpen) return <p>CLOSED</p>;
 
   return (
     <footer className="footer">
