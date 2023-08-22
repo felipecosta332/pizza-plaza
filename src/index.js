@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import { ProfileCardV1 } from "./ProfileCardV1";
+import { ProfileCardV2 } from "./ProfileCardV2";
 import "./index.css";
 
 const pizzaData = [
@@ -57,6 +58,7 @@ function App() {
         <Footer />
       </div>
       {/* <ProfileCardV1 /> */}
+      <ProfileCardV2 />
     </div>
   );
 }
